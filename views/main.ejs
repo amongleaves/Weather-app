@@ -1,0 +1,38 @@
+<% include partials/header.ejs %>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Current weather in <%= weatherData["location"]["name"] %>, <%= weatherData["location"]["country"] %>:</h1>
+
+		<div class="row list-group-item">
+			<div class="col-xs-6">Weather last updated: </div>
+			<div class="col-xs-6"><%= weatherData["current"]["last_updated"] %></div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Temperature: </div>
+			<div class="col-xs-6"><%= weatherData["current"]["temp_c"] %> C°</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Humidity: </div>
+			<div class="col-xs-6"><%= weatherData["current"]["humidity"] %> mb</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Condition: </div>
+			<div class="col-xs-6"><%= weatherData["current"]["condition"]["text"] %></div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Wind speed: </div>
+			<div class="col-xs-6"><%= weatherData["current"]["wind_kph"]%> kph</div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Wind direction:  </div>
+			<div class="col-xs-6"><%= weatherData["current"]["wind_dir"] %></div>
+		</div>
+		<div class="row list-group-item">
+			<div class="col-xs-6">Pressure:  </div>
+			<div class="col-xs-6"><%= weatherData["current"]["pressure_mb"] %> mb</div>
+		</div>
+	</div>
+</div>
+
+<% include partials/footer.ejs %>
