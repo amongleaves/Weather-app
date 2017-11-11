@@ -4,9 +4,9 @@
   "description": "And app that should show weather",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "start": "node app.js",
   "author": "Vaidotas Valiukas",
   "license": "ISC",
   "dependencies": {
