@@ -2,9 +2,10 @@ body{
 	height: 100%;
 	text-align: center;
 	background: url(/conc.jpg);
-	    background-size:     cover;                      
-	    background-repeat:   no-repeat;
-	    background-position: center center;     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+	width: 100%; 
 	
 }
 
